@@ -1,6 +1,6 @@
 # Projeto ATLAS - Reconstrução de sinal - Função pulso de referência.
 # Autor: Guilherme Barroso Morett.
-# Data: 06 de maio de 2024.
+# Data: 07 de maio de 2024.
 
 # Objetivo do código: Análise da função pulso de referência.
 
@@ -13,12 +13,16 @@ Entrada: dados da função pulso de referêbcia no intervalo de tempo de [-75,5;
 Saída: matriz com os dados organizados (primeira coluna: tempo; segunda coluna: valores da função pulso de referência).
 Obs.: essa matriz foi construída para a análise até o janelamento 19.
 
-2) Instrução para o plote do gráfico do pulso de referência ou sua derivada ao longo do tempo de acordo com o janelamento.
+2) Função da análise da função pulso de referência de acordo com o janelamento.
+Entrada: número de janelamento e a matriz dos dados dos pulsos de referência adaptada.
+Saída: vetor do janelamento do tempo, vetor do janelamento do pulso de referencia, vetor do janelamento da derivada do pulso de referencia
+
+3) Instrução para o plote do gráfico do pulso de referência ou sua derivada ao longo do tempo de acordo com o janelamento.
 # Obs.: esse plote pode ser tanto da função pulsos de referência como da derivada primeira.
 Entrada: tipo de gráfico ("A" ou "B"), vetor do tempo (ns) e vetor da função pulsos de referência ou a sua derivada.
 Saída: nada.
 
-3) Instrução principal para a análise da função pulso de referência.
+4) Instrução principal para a análise da função pulso de referência.
 Entrada: nada.
 Saída: nada.
 
@@ -105,7 +109,7 @@ def leitura_dados_pulso_referencia():
 
 ### -------------------------------------------------------------------------------------------------------------------------------------------- ###
 
-### ------------------------- 1) FUNÇÃO A ANÁLISE DA FUNÇÃO PULSO DE REFERÊNCIA DE ACORDO COM O JANELAMENTO ------------------------------------- ###
+### ------------------------- 2) FUNÇÃO DA ANÁLISE DA FUNÇÃO PULSO DE REFERÊNCIA DE ACORDO COM O JANELAMENTO ------------------------------------- ###
 # Definição da função para exibição do intervalo da função de referência de acordo com o janelamento.
 def funcao_referencia(n_janelamento, Matriz_dados_pulso_referencia_adaptada):
     
@@ -263,7 +267,7 @@ def funcao_referencia(n_janelamento, Matriz_dados_pulso_referencia_adaptada):
     
 ### -------------------------------------------------------------------------------------------------------------------------------------------- ###
 
-### ------- 2) Instrução para o plote do gráfico do pulso de referência ou sua derivada ao longo do tempo de acordo com o janelamento ---------- ###
+### ------- 3) Instrução para o plote do gráfico do pulso de referência ou sua derivada ao longo do tempo de acordo com o janelamento ---------- ###
 
 # Definição da função para o plote do gráfico.
 def grafico_funcao_pulso_referencia(tipo_grafico, vetor_janelamento_tempo, vetor_janelamento_pulsos_referencia):
@@ -306,7 +310,7 @@ def grafico_funcao_pulso_referencia(tipo_grafico, vetor_janelamento_tempo, vetor
 
 # -------------------------------------------------------------------------------------------------------------------------------------------- ###
 
-### ----------------------- 3) INSTRUÇÃO PRINCIPAL PARA A ANÁLISE DA FUNÇÃO PULSO DE REFERÊNCIA ---------------------------------------------- ###
+### ----------------------- 4) INSTRUÇÃO PRINCIPAL PARA A ANÁLISE DA FUNÇÃO PULSO DE REFERÊNCIA ---------------------------------------------- ###
 
 # Definção da instrução principal para o código.
 def principal_funcao_pulso_referencia():
