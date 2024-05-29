@@ -9,7 +9,7 @@
 Funções presentes:
 
 1) Função para a leitura dos dados de pulso de referência.
-Entrada: dados da função pulso de referêbcia no intervalo de tempo de [-75,5;124,5] ns.
+Entrada: dados da função pulso de referência no intervalo de tempo de [-75,5;124,5] ns.
 Saída: matriz com os dados organizados (primeira coluna: tempo; segunda coluna: valores da função pulso de referência).
 Obs.: essa matriz foi construída para a análise até o janelamento 19.
 
